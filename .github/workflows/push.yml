@@ -1,7 +1,7 @@
 on: [push]
-name: Create an issue on push
+name: tests
 jobs:
-  stuff:
+  datasets-download:
     runs-on: ubuntu-latest
 
     steps:
