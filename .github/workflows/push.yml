@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        
+      - name: Failure
+        run: exit 1
 
       - uses: JasonEtco/create-an-issue@v2.4.0
         if: ${{ failure() }}
