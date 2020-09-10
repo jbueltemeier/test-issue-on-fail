@@ -4,7 +4,10 @@ assignees: pmeier
 labels: bug
 ---
 
-Oh no, something went wrong.
+Oh no, something went wrong in the scheduled workflow {{ env.WORKFLOW }}/{{ env.JOB }}. 
+Please look into it:
 
-tools.context.action: {{ tools.context.action }} / {{ action }}
-tools.context.workflow: {{ tools.context.workflow }} / {{ workflow }}
+https://github.com/{{ env.REPO}}/runs/{{ ID }}
+
+Feel free to close this if this was just a one-off error.
+
