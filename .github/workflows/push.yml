@@ -1,0 +1,11 @@
+on: [push]
+name: Create an issue on push
+jobs:
+  stuff:
+    steps:
+      - uses: JasonEtco/create-an-issue@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/failed_schedule_issue_template.md
+
