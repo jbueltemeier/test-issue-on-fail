@@ -1,7 +1,7 @@
 ---
-title: Workflow failed
+title: Scheduled workflow {{ github.workflow }}/{{ github.job }}failed
 assignees: pmeier
 labels: bug
 ---
 
-The workflow failed!
+Oh no, something went wrong.
